@@ -1,0 +1,11 @@
+spring:
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9093
+  main:
+    allow-bean-definition-overriding: true
+    lazy-initialization: false
+  profiles:
+    active: dev
+server:
+  port: 8081

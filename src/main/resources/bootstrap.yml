@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: logistic-bp
+  config:
+    import: configserver:http://localhost:8071
