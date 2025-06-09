@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.UUID;
 
-@FeignClient(name = "cargo-contract-service", url = "http://localhost:8072/cargo-contract-service/contracts")
+@FeignClient(name = "cargo-contract-service", url = "http://logistic-gatewayserver:8072/cargo-contract-service/contracts")
 public interface ContractClient {
 
     @PostMapping("/{id}")
