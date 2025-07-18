@@ -7,5 +7,19 @@ spring:
     lazy-initialization: false
   profiles:
     active: dev
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            provider: keycloak
+            client-id: logistic-bp
+            client-secret: yDHBssiT674IUBXPoTNrVwKCDWabk1EC
+            client-name: Logistic BP
+            authorization-grant-type: authorization_code
+            scope: openid, profile, email
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/logistic-realm
 server:
   port: 8081
